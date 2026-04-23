@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Profile</title>
+  <style>
+    * { box-sizing: border-box; margin: 1; padding: 1; }
+    body { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 1.5rem; background-color: #cfc1cf; }
+
+    .profile-header { display: flex; align-items: flex-start; gap: 2rem; margin-bottom: 2rem; }
+    .profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid #888;
+  overflow: hidden; /* ensures image stays inside the circle */
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes the image fill the circle neatly */
+}
+
+
+    .profile-info { display: flex; flex-direction: column; gap: 16px; padding-top: 16px; }
+    .field { display: flex; align-items: center; gap: 10px; }
+    .field label { font-size: 13px; font-weight: 600; min-width: 65px; }
+    .field .line { flex: 1; border-bottom: 1px solid #aaa; min-width: 180px; height: 20px; }
+
+    .section-title { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; margin-bottom: 10px; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 1.5rem; table-layout: fixed; }
+    th { background: #d9d9d9; border: 1px solid #999; padding: 7px 10px; text-align: left; font-weight: 600; }
+    td { border: 1px solid #999; padding: 7px 10px; height: 30px; }
+
+    .hobbies { margin-bottom: 2rem; }
+    .hobbies ol { padding-left: 1.2rem; display: flex; flex-direction: column; gap: 12px; font-size: 13px; }
+    .hobbies li .line { display: inline-block; min-width: 220px; border-bottom: 1px solid #aaa; }
+
+    .social-links { display: flex; justify-content: space-around; gap: 1.5rem; padding-top: 0.5rem; }
+    .social-btn { text-decoration: none; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+    .social-circle { width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: opacity 0.2s; }
+
+  
+
+    
+  </style>
+</head>
+<body>
+
+  <div class="profile-header">
+    <div class="profile-image">
+        <img src="chris.jpg" alt="Profile Image">
+    </div>
+
+    <div class="profile-info">
+      <div class="field"><label>NAME</label>NDAGIRE MUKISA CHRISTINE</div>
+      <div class="field"><label>COURSE</label>INFORMATION TECHNOLOGY AND COMPUTING</div>
+      <div class="field"><label>YEAR</label>2024</div>
+    </div>
+  </div>
+
+  <p class="section-title">EDUCATION BACKGROUND</p>
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 30%;">YEAR</th>
+        <th style="width: 50%;">SCHOOL</th>
+        <th style="width: 40%;">AWARD</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>2024 - 2027</td><td>KYAMBOGO UNIVERSITY</td><td>BACHELORS DEGREE</td></tr>
+      <tr><td>2022 - 2023</td><td>LUBIRI SENIOR SECONDARY SCHOOL</td><td>UACE</td></tr>
+      <tr><td>2017 - 2020</td><td>NEW HOPE ACADEMY</td><td>UCE</td></tr>
+    </tbody>
+  </table>
+
+  <div class="hobbies">
+    <p class="section-title">Hobbies</p>
+    <ol>
+      <li>Travel</li>
+      <li>Baking</li>
+      <li>Hiking</li>
+      <li>Reading</li>
+    </ol>
+  </div>
+
+  <p>For more information check the social media platforms below.</p> <br>
+  
+  <div class="social-links"></div>
+  <div style="display: flex; justify-content: flex-start; gap: 20px; padding-top: 10px;">
+    <a href="https://www.tiktok.com/@ndagire.christine" target="_blank">
+        <img src="Tiktok.png" alt="TikTok" style="border-radius: 50%; width: 60px; height: 60px; object-fit: cover;">
+    </a>
+    
+    <a href="https://wa.me/0706809519" target="_blank">
+        <img src="Watsapp.png" alt="Watsapp" style="border-radius: 50%; width: 60px; height: 60px; object-fit: cover;">
+    </a>
+  </div>
+
+  <br><br>
+<a href="Table Assignment.html">View The Tables page.</a>
+
+
+ 
+
+</body>
+</html>
